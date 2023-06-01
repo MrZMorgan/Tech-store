@@ -1,4 +1,4 @@
-package com.example.tech_store;
+package com.example.techStore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

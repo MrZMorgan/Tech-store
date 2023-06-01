@@ -1,0 +1,34 @@
+### Просмотр всех существующих товаров по типу
+GET http://localhost:8080/store/goods/productType/COMPUTER/
+
+### Просмотр товара по идентификатору
+GET http://localhost:8080/store/goods/productType/COMPUTER/id/1
+
+### Добавление товара
+POST http://localhost:8080/store/goods/
+Content-Type: application/json
+
+{
+  "type": "COMPUTER",
+  "product": {
+    "serialNumber": "wersdffs3453",
+    "price": 25345345,
+    "quantity": 346,
+    "formFactor": "DESKTOP"
+  }
+}
+
+### Редактирование товара
+PUT http://localhost:8080/store/goods/
+Content-Type: application/json
+
+{
+  "type": "COMPUTER",
+  "product": {
+    "id": 1,
+    "serialNumber": "тест",
+    "price": 25345345,
+    "quantity": 346,
+    "formFactor": "DESKTOP"
+  }
+}
